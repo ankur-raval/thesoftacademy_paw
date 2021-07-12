@@ -1,0 +1,225 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metas Basic -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Title -->
+    <title>The Soft Academy</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.jpg' %}" type="image/x-icon">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- owl carousel theme default CSS file -->
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <!-- owl carousel CSS file -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <!-- Main Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <!-- Slick  -->
+    <link rel="stylesheet" href="{% static 'css/registration.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}">
+    <!-- jQuery Fancybox  -->
+    <link rel="stylesheet" href="{% static 'css/jquery.fancybox.css' %}">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">   
+
+</head>
+
+<body>
+    <!-- header area start -->
+    <header id="header" class="transparent-header">
+        <!-- #navigation start -->
+        <nav class="navbar navbar-default navbar-expand-md navbar-light" id="navigation" data-offset-top="1" style="padding: 0px;">
+            <!-- .container -->
+            <div class="container">
+                <!-- Logo and Menu -->
+                <div class="navbar-header">
+                    <div class="navbar-brand"><a href="{% url 'index' %}"><img src="{% static 'images/01.png' %}" alt="Logo"/></a></div>
+                    <!-- site logo -->
+                </div>
+                <!-- Menu Toogle -->
+                <div class="burger-icon">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="collapse navbar-collapse " id="navbarCollapse">
+                    <ul class="nav navbar-nav ml-auto">
+                        <!-- Menu Link -->
+                        <li class="subnav">
+                            <a href="{% url 'index' %}" style="text-decoration: none;">Home</a>
+                        </li>
+                        <li><a href="services.html" style="text-decoration: none;">Services</a></li>
+                        <li class="subnav">
+                            <a href="courses.html" style="text-decoration: none;" >Courses</a>
+                            <ul class="sub-menu">
+                                <li><a href="courses.html" style="text-decoration: none;"  class="nav-link smooth-scroll">Free Session</a></li>
+                                <li><a href="course-detail.html" style="text-decoration: none;"  class="nav-link smooth-scroll">Course Basic Course</a></li>
+                                <li><a href="course-detail-style2.html" style="text-decoration: none;"  class="nav-link smooth-scroll">Advance Course</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="events.html" style="text-decoration: none;">Events</a></li>
+                        <li><a href="blog.html" style="text-decoration: none;">Blog</a></li>
+                        <li class="subnav">
+                            <a href="contact.html" style="text-decoration: none;">Contact</a>                          
+                        </li>
+                    </ul>
+                    <div class="header-cta">
+                        <a href="{% url 'registration' %}" class="btn btn-1c">Join Now</a>
+                    </div>
+                </div>
+                <!-- Menu Toogle end -->
+            </div>
+            <!-- .container end -->
+        </nav>
+        <!-- #navigation end -->
+    </header>
+    <!-- end header area -->
+    
+
+
+
+
+    {% block index_block %}
+    {% endblock index_block %}
+
+
+    {% block registration_block %}
+    {% endblock registration_block %}
+
+
+
+
+
+
+
+
+
+
+
+    <!-- #footer area start -->
+    <footer id="footer" class="wrap-bg-secondary">
+        <div class="footer-top">
+            <!-- .container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6" style="margin-top: 50px;">
+                        <!-- footer widget -->
+                        <div class="f-widget-title">
+                            <a href="{% url 'index' %}"><img src="{% static 'images/06_white.jpg' %}" alt="Logo"/ style="max-height: 80px; margin-bottom: 40px;"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Never Stop Learning Because Life Never Stop's Teaching...
+                            </p>
+                        </div>
+                        <div class="icon-round-white footer-social mt-25">
+                            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="Google+"><i class="fab fa-google-plus"></i></a>
+                        </div>
+                    </div>
+                    <!-- footer widget -->
+                    <div class="col-xl-2 offset-xl-1 col-lg-2 col-sm-6">
+                        <!-- footer widget -->
+                        <div class="f-widget-title">
+                            <h4 style="color: white;">Recent Blog</h4>
+                        </div>
+                        <div style="width: 330px;">                           
+                            <img src="{% static 'images/06_cropped_white.jpg' %}" alt="" style="max-height: 70px;">                           
+                            <p style="color: white; font-size: 14px; margin-top: -70px; margin-left: 90px;">This is 1st recent blog Heading...</p>                                                   
+                        </div>
+                        <div style="width: 330px; margin-top: 80px;">                           
+                            <img src="{% static 'images/06_cropped_white.jpg' %}" alt="" style="max-height: 70px;">                           
+                            <p style="color: white; font-size: 14px; margin-top: -70px; margin-left: 90px;">This is 2nd recent blog Heading...</p>                                                   
+                        </div>
+                    </div>
+                    
+                    <!-- footer widget -->
+                    <div class="col-xl-3 col-lg-3 col-sm-6" style="margin-left: auto;">
+                        <!-- footer widget -->
+                        <div class="f-widget-title">
+                            <h4>Contact us</h4>
+                        </div>
+                        <div class="sigle-address">
+                            <div class="address-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <p>902 , Royal Trade Center, <br> Adajan, Surat.
+                            </p>
+                        </div>
+                        <div class="sigle-address">
+                            <div class="address-icon">
+                                <i class="far fa-envelope-open"></i>
+                            </div>
+                            <p>thesoftacademy@gmail.com</p>
+                        </div>
+                        <div class="sigle-address">
+                            <div class="address-icon">
+                                <i class="fas fa-headphones"></i>
+                            </div>
+                            <p>+012 (4567) 789</p>
+                        </div>
+                    </div>
+                    <!-- footer widget -->
+                </div>
+                <!-- to top -->
+                <div class="cd-top"><i class="fas fa-level-up-alt"></i></div>
+            </div>
+        </div>
+        <!-- .container end -->
+
+        <!-- #footer bottom start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright text-center">
+                        <p>©2019 The Soft Academy. All Rights Reserved. Designed By <a href="" title="ThemeIoan" target="_blank" style="font-size: 16px;">  The Point of View Web Lab</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- to top -->
+            <div class="cd-top">Top</div>
+
+        </div>
+        <!-- #footer bottom end -->
+    </footer>
+    <!-- #footer area end -->
+
+    <!-- JavaScript File -->
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+    <!-- Main -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <!-- Main -->
+    <script src="{% static 'js/registration.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- Slick -->
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <!-- Fancybox -->
+    <script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+    <!-- Magnific Popup core JS file -->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <!-- Waypoints -->
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <!-- Counterup -->
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <!-- owl carousel -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    
+</body>
+
+</html>

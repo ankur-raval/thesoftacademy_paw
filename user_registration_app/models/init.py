@@ -1,0 +1,1 @@
+from .student_reg import student_registration
