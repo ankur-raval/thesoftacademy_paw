@@ -935,7 +935,7 @@ select:focus {
     top: 0;
     z-index: 999;
     transition: .3s;
-    padding: 15px 0px;
+    padding: 30px 0px;
 }
 
 .transparent-header.sticky-menu {
@@ -944,14 +944,11 @@ select:focus {
     position: fixed !important;
     top: 0;
     width: 100%;
-    box-shadow: 0 0 60px 0 rgba(0, 0, 0, .07);
     -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
-    -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
     z-index: 999;
-    /* background-image: linear-gradient(to right, #121a2f, rgba(20, 41, 65, 0.81)); */
-    background-color: whitesmoke;
-    padding: 0;
+    /* background-image: linear-gradient(to right, #121a2f, rgba(20, 41, 65, 0.81)); */   
+    padding: 30px 0px;
 }
 
 
@@ -1858,8 +1855,8 @@ select:focus {
 }
 
 .blog-photo img {
-    width: 100%;
-    height: auto;
+    width: 400px;
+    height: 233px;
 }
 
 .themeioan_blog .blog-content .course-viewer,
@@ -2806,7 +2803,7 @@ select:focus {
 
 @media (max-height: 750px) {
     .header-content {
-        min-height: 750px !important;
+        min-height: 670px !important;
     }
 }
 
@@ -2887,7 +2884,7 @@ select:focus {
 }
 
 .bg-services {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .2)), url(../images/content/breadcrumb/services.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .2)), url(../images/Trade-with-Integrity-Professionalism-and-Transparency-slide.jpg);
 }
 
 .bg-events {
@@ -3059,7 +3056,7 @@ select:focus {
         font-weight: 400;
         font-size: 15px;
         text-transform: capitalize;
-        color: #222 !important;
+        color: #187106 !important;
         transition: all 500ms ease;
         -moz-transition: all 500ms ease;
         -webkit-transition: all 500ms ease;
@@ -3189,4 +3186,12 @@ select:focus {
 
 .nav li a{
     color: #061871 !important;
+}
+
+.main_menu li a:hover {
+    color: green !important;
+}
+
+.sub_menu li a:hover {
+    color: green !important;    
 }

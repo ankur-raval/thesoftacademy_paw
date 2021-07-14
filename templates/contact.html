@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contact_block %}
+
+
+<main>
+    <!-- breadcrumb banner content area start -->
+    <div class="lernen_banner bg-contact">
+        <div class="container">
+            <div class="row">
+                <div class="lernen_banner_title">
+                    <h1>Contact</h1>
+                    <div class="lernen_breadcrumb">
+                        <div class="breadcrumbs">
+									<span class="first-item">
+									<a href="{% url 'index' %}">Home</a></span>
+                            <span class="separator">&gt;</span>
+                            <span class="last-item">Contact</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end breadcrumb banner content area start -->
+
+
+    <!-- contact area start -->
+    <div id="features" class="wrap-bg wrap-bg-dark">
+        <!-- .container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <!-- 1 -->
+                    <div class="single-features-light text-center"><!-- single features -->
+                        <div class="move">
+                            <!-- uses solid style -->
+                            <i class="secondary-color fas fa-home fa-3x"></i>
+                            <h4><a href="#">CoursePro HQ</a></h4>
+                            <p>121 King Street, Melbourne Victoria 3000 Australia Call us Today, we give premium support.</p>
+                            <div class="feature_link">
+                                <a href="#">Call Center <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div><!-- end single features -->
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <!-- 2 -->
+                    <div class="single-features-light text-center"><!-- single features -->
+                        <div class="move">
+                            <i class="secondary-color fas fa-home fa-3x"></i>
+                            <h4><a href="#">Paris</a></h4>
+                            <p>PO Box 16122 Collins Street West Victoria 8007 Australia Call us Today, we give premium support.</p>
+                            <div class="feature_link">
+                                <a href="#">Call Center <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div><!-- end single features -->
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 ">
+                    <!-- 3 -->
+                    <div class="single-features-light text-center"><!-- single features -->
+                        <div class="move">
+                            <i class="secondary-color fas fa-id-card fa-3x"></i>
+                            <h4><a href="#">New York</a></h4>
+                            <p>121 King Street, Melbourne Victoria 3000 Australia Call us Today, we give premium support.</p>
+                            <div class="feature_link">
+                                <a href="#">Call Center <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div><!-- end single features -->
+                </div>
+            </div>
+            <!-- .row end -->
+        </div>
+        <!-- .container end -->
+    </div>
+    <!-- contact area end -->
+
+
+    <!-- contact area start -->
+    <div id="contact" class="wrap-bg">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="section-title with-p">
+                        <span>Contact</span>
+                        <h2>We’re Here To Help You</h2>
+                        <p>We are waiting for you on our office in London or in way, contact us via the contact form below your idea. We are here to answer any question.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <form class="themeioan-form-contact form" id="contact-us-form">
+                    <!-- Change Placeholder and Title -->
+                    <div>
+                        <input class="input-text required-field" type="text" name="contactName" id="contactName"
+                               placeholder="Name" title="Your Full Name"/>
+                    </div>
+                    <div>
+                        <input class="input-text required-field email-field" type="email" name="contactEmail"
+                               id="contactEmail" placeholder="Email" title="Your Email"/>
+                    </div>
+                    <div>
+                        <input class="input-text required-field" type="text" name="contactSubject" id="contactSubject"
+                               placeholder="Subject" title="Your Subject"/>
+                    </div>
+                    <div>
+                    <textarea class="input-text required-field" name="contactMessage" id="contactMessage"
+                              placeholder="Message" title="Your Message"></textarea>
+                    </div>
+                    <input class="color-two button" type="submit"
+                           value="Send Message"/>
+                </form>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <img src="images/content/courses/contact.jpg" alt="Buy this Course">
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact area end -->
+
+
+    <div class="lernen_contact_map">
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.2471164079757!2d72.7920679823771!3d21.186095485072958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04dd04755742f%3A0xb5a79a4c0f1742c!2sRoyal%20Trade%20Centre%2C%20Hazira%20-%20Adajan%20Rd%2C%20Jalaram%20Society%2C%20Adajan%20Gam%2C%20Adajan%2C%20Surat%2C%20Gujarat%20395009!5e0!3m2!1sen!2sin!4v1626169899112!5m2!1sen!2sin" width="600" height="450" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        </p>
+    </div>
+
+</main>
+
+
+{% endblock contact_block %}

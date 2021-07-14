@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block events_block %}
+
+
+
+<main>
+    <!-- breadcrumb banner content area start -->
+    <div class="lernen_banner bg-events">
+        <div class="container">
+            <div class="row">
+                <div class="lernen_banner_title">
+                    <h1>Events</h1>
+                    <div class="lernen_breadcrumb">
+                        <div class="breadcrumbs">
+									<span class="first-item">
+									<a href="{% url 'index' %}">Home</a></span>
+                            <span class="separator">&gt;</span>
+                            <span class="last-item">Events</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end breadcrumb banner content area start -->
+
+    <!-- events area start -->
+    <div id="events" class="wrap-bg wrap-bg-dark bg-bottom-zero">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="section-title with-p">
+                        <span>Calendar</span>
+                        <h2>Upcoming Events</h2>
+                        <p>Always keep updated with our new upcoming events, <br> so that you can be upgrade.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 course-single mb20">
+                    <!-- 1 -->
+                    <div class="themeioan_event">
+                        <article><!-- single event start -->
+                            <div class="event-photo">
+                                <div class="date">
+                                    <h4><span>11</span> Sep, 2019</h4>
+                                </div>
+                                <a href="event-detail.html"><img src="images/content/events/1.jpg" alt=""></a>
+                            </div>
+                            <div class="event-content">
+                                <h5 class="title"><a href="event-detail.html">International Conference on Art Business</a>
+                                </h5>
+                                <p>This conference provides opportunities for the delegates to exchange new ideas and
+                                    application experiences face to face, to establish business or research relations
+                                    and to find.
+                                </p>
+                                <ul class="themeioan_ul_icon">
+                                    <li><i class="fas fa-check-circle"></i> Automated Software</li>
+                                    <li><i class="fas fa-check-circle"></i> Experience Design</li>
+                                    <li><i class="fas fa-check-circle"></i> Automated Software</li>
+                                </ul>
+                                <div class="course-viewer">
+                                    <ul>
+                                        <li><i class="fas fa-calendar-alt"></i> 11 Sep, 2019</li>
+                                        <li><i class="fas fa-clock"></i> 8:00 AM - 5:00 PM</li>
+                                        <li><i class="fas fa-map"></i> California, TX 70240</li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-section">
+                                    <a href="event-detail.html" class="color-two btn-custom smooth-scroll">Book Now <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </article><!-- single event end-->
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 course-single mb20">
+                    <!-- 2 -->
+                    <div class="themeioan_event">
+                        <article><!-- single event start -->
+                            <div class="event-photo">
+                                <div class="date">
+                                    <h4><span>14</span> Jul, 2019</h4>
+                                </div>
+                                <a href="event-detail.html"><img src="images/content/events/2.jpg" alt=""></a>
+                            </div>
+                            <div class="event-content">
+                                <h5 class="title"><a href="event-detail.html">Secondary Schools United Nations</a>
+                                </h5>
+                                <p>This conference provides opportunities for the delegates to exchange new ideas and
+                                    application experiences face to face, to establish business or research relations
+                                    and to find.
+                                </p>
+                                <ul class="themeioan_ul_icon">
+                                    <li><i class="fas fa-check-circle"></i> Content Engineering</li>
+                                    <li><i class="fas fa-check-circle"></i> Product Development</li>
+                                    <li><i class="fas fa-check-circle"></i> Data Structuring</li>
+                                </ul>
+                                <div class="course-viewer">
+                                    <ul>
+                                        <li><i class="fas fa-calendar-alt"></i> 14 Jul, 2019</li>
+                                        <li><i class="fas fa-clock"></i> 8:00 AM - 5:00 PM</li>
+                                        <li><i class="fas fa-map"></i> California, TX 70240</li>
+                                    </ul>
+                                </div>
+
+                                <div class="btn-section">
+                                    <a href="event-detail.html" class="color-two btn-custom smooth-scroll">Book Now <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </article><!-- single event end -->
+                    </div>
+                </div>
+            </div>
+            <!-- .row end -->
+        </div>
+    </div>
+    <!-- events area end -->
+
+
+</main>
+
+
+{% endblock events_block %}

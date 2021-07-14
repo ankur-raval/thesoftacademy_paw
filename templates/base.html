@@ -35,7 +35,7 @@
     <!-- header area start -->
     <header id="header" class="transparent-header">
         <!-- #navigation start -->
-        <nav class="navbar navbar-default navbar-expand-md navbar-light" id="navigation" data-offset-top="1" style="padding: 0px;">
+        <nav class="navbar navbar-default navbar-expand-md navbar-light" id="navigation" data-offset-top="1" style="padding: 0px; background-color: rgba(192,192,192,0.6);">
             <!-- .container -->
             <div class="container">
                 <!-- Logo and Menu -->
@@ -50,28 +50,28 @@
                     <div class="bar3"></div>
                 </div>
                 <div class="collapse navbar-collapse " id="navbarCollapse">
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav ml-auto main_menu">
                         <!-- Menu Link -->
                         <li class="subnav">
                             <a href="{% url 'index' %}" style="text-decoration: none;">Home</a>
                         </li>
-                        <li><a href="services.html" style="text-decoration: none;">Services</a></li>
+                        <li><a href="{% url 'services' %}" style="text-decoration: none;">Services</a></li>
                         <li class="subnav">
-                            <a href="courses.html" style="text-decoration: none;" >Courses</a>
+                            <a href="{% url 'courses' %}" style="text-decoration: none;" >Courses</a>
                             <ul class="sub-menu">
-                                <li><a href="courses.html" style="text-decoration: none;"  class="nav-link smooth-scroll">Free Session</a></li>
-                                <li><a href="course-detail.html" style="text-decoration: none;"  class="nav-link smooth-scroll">Course Basic Course</a></li>
-                                <li><a href="course-detail-style2.html" style="text-decoration: none;"  class="nav-link smooth-scroll">Advance Course</a></li>
+                                <li><a href="{% url 'free_session' %}" style="text-decoration: none;"  class="nav-link smooth-scroll">Free Session</a></li>
+                                <li><a href="{% url 'basic_course' %}" style="text-decoration: none;"  class="nav-link smooth-scroll">Basic Course</a></li>
+                                <li><a href="{% url 'advance_course' %}" style="text-decoration: none;"  class="nav-link smooth-scroll">Advance Course</a></li>
                             </ul>
                         </li>
-                        <li><a href="events.html" style="text-decoration: none;">Events</a></li>
-                        <li><a href="blog.html" style="text-decoration: none;">Blog</a></li>
+                        <li><a href="{% url 'events' %}" style="text-decoration: none;">Events</a></li>
+                        <li><a href="{% url 'blogs' %}" style="text-decoration: none;">Blog</a></li>
                         <li class="subnav">
-                            <a href="contact.html" style="text-decoration: none;">Contact</a>                          
+                            <a href="{% url 'contact' %}" style="text-decoration: none;">Contact</a>                          
                         </li>
                     </ul>
                     <div class="header-cta">
-                        <a href="{% url 'registration' %}" class="btn btn-1c">Join Now</a>
+                        <a href="{% url 'registration' %}" class="btn btn-1c" style="color: #187106;">Join Now</a>
                     </div>
                 </div>
                 <!-- Menu Toogle end -->
@@ -89,10 +89,32 @@
     {% block index_block %}
     {% endblock index_block %}
 
-
     {% block registration_block %}
     {% endblock registration_block %}
 
+    {% block services_block %}
+    {% endblock services_block %}
+
+    {% block courses_block %}
+    {% endblock courses_block %}
+
+    {% block free_session_course %}
+    {% endblock free_session_course %}
+
+    {% block basic_course %}
+    {% endblock basic_course %}
+
+    {% block advance_course %}
+    {% endblock advance_course %}
+
+    {% block events_block %}
+    {% endblock events_block %}
+
+    {% block blogs_block %}
+    {% endblock blogs_block %}
+
+    {% block contact_block %}
+    {% endblock contact_block %}
 
 
 
@@ -121,8 +143,7 @@
                         <div class="icon-round-white footer-social mt-25">
                             <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
                             <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                            <a href="#" title="Google+"><i class="fab fa-google-plus"></i></a>
+                            <a href="https://www.instagram.com/thesoftacademy/" title="Instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                     <!-- footer widget -->
