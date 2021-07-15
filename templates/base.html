@@ -35,7 +35,7 @@
     <!-- header area start -->
     <header id="header" class="transparent-header">
         <!-- #navigation start -->
-        <nav class="navbar navbar-default navbar-expand-md navbar-light" id="navigation" data-offset-top="1" style="padding: 0px; background-color: rgba(192,192,192,0.6);">
+        <nav class="navbar navbar-default navbar-expand-md navbar-light menu_bg" id="navigation" data-offset-top="1" style="padding: 0px; background-color: white;">
             <!-- .container -->
             <div class="container">
                 <!-- Logo and Menu -->
@@ -59,6 +59,7 @@
                         <li class="subnav">
                             <a href="{% url 'courses' %}" style="text-decoration: none;" >Courses</a>
                             <ul class="sub-menu">
+                                <li><a href="{% url 'courses' %}" style="text-decoration: none;"  class="nav-link smooth-scroll">All Courses</a></li>
                                 <li><a href="{% url 'free_session' %}" style="text-decoration: none;"  class="nav-link smooth-scroll">Free Session</a></li>
                                 <li><a href="{% url 'basic_course' %}" style="text-decoration: none;"  class="nav-link smooth-scroll">Basic Course</a></li>
                                 <li><a href="{% url 'advance_course' %}" style="text-decoration: none;"  class="nav-link smooth-scroll">Advance Course</a></li>
@@ -239,6 +240,22 @@
 
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script>
+        $(function () { 
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) { 
+                    $('.menu_bg').css('background-color','rgb(223, 238, 234, .95)')
+                    $('.btn-1c').css('border','1px solid white')
+                }
+                if ($(this).scrollTop() < 50) { 
+                    $('.menu_bg').css('background-color','white')
+                    $('.btn-1c').css('border','1px solid black')
+                }
+            })
+        });
+    </script>
 
     
 </body>

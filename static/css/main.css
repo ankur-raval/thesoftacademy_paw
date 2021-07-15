@@ -1106,7 +1106,7 @@ select:focus {
 /* 2.2. ========================= Header Content ========================= */
 
 .bg-home-ome {
-    background: url("../images/landing_img.jpg") no-repeat;
+    background: url("../images/open-account-cta.jpg") no-repeat;
     background-position: center;
 }
 
@@ -1810,7 +1810,7 @@ select:focus {
 /* Button 1c */
 
 .btn-1c {
-    border: 1px solid #fff;
+    border: 1px solid black;
 }
 
 .btn-1c:after {
@@ -2896,7 +2896,7 @@ select:focus {
 }
 
 .bg-courses {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .2)), url(../images/content/breadcrumb/courses.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .2)), url(../images/102-1025902_life-long-learning.jpg);
 }
 
 .bg-contact {
