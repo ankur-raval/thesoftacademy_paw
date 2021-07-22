@@ -203,9 +203,11 @@ h6,
     background: #187106;
 }
 
-.bar1,
-.bar2,
-.bar3,
+.bar1, .bar2, .bar3 {
+    background-color: rgb(24,113,6);
+}
+
+
 .wrap-bg.wrap-bg-grey,
 #teachers .item,
 .color-three,
@@ -2221,6 +2223,12 @@ select:focus {
     padding: 100px 0px 80px 0px;
 }
 
+@media (max-height:768px) {
+    .footer-top .row {
+        padding: 0px 0px 80px 0px;
+    }
+}
+
 .offnewsletter.footer-top .row {
     padding: 80px 0px 80px 0px;
 }
@@ -2558,6 +2566,7 @@ select:focus {
     #header .navbar-default .navbar-nav>li>ul>li>ul>li>ul {
         display: none;
         list-style: none;
+        padding-left: 30px;
     }
     .show-sub-menu {
         display: block !important;
@@ -2591,7 +2600,9 @@ select:focus {
         padding: 24px 0px 13px 15px;
     }
     #header .navbar-brand img {
-        height: 34px;
+        height: 70px;
+        margin-top: -15px;
+        margin-left: -10px;
     }
     #header .nav>li>a,
     #header .nav>li>a:hover {
@@ -2803,7 +2814,19 @@ select:focus {
 
 @media (max-height: 750px) {
     .header-content {
-        min-height: 670px !important;
+        min-height: 735px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .bg-home-ome {
+        background: url(../images/7cc577995d1a7993af5af18857169bde.jpg);
+    }
+    .bg-content {
+        margin-top: 200px;
+    }
+    .header-content:after {
+        background-color: rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -3195,3 +3218,4 @@ select:focus {
 .sub_menu li a:hover {
     color: green !important;    
 }
+

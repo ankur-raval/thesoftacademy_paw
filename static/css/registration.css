@@ -1,9 +1,9 @@
 
 .login-block
 {
-  background-color:#fff;
-  margin: 120px auto 0px;
-  padding:60px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0px auto 0px;
+  padding: 10px 60px 10px;
   max-width: 50%;
   -webkit-box-shadow:0 3px 50px 0 rgba(0,0,0,.1);
   box-shadow:0 3px 50px 0 rgba(0,0,0,.1);
@@ -19,8 +19,8 @@
 .login-block h1
 {
   font-size:22px;
-  margin-bottom:60px;
-  /* margin-top:40px */
+  margin-bottom:40px;
+  margin-top:40px
 }
 .login-block h6
 {
@@ -53,7 +53,7 @@
 }
 .login-block .input-group-addon
 {
-  color:#29aafe;
+  color:#187106;
   font-size:19px;
   opacity:.5;
   padding-top: 12px;
@@ -62,8 +62,8 @@
 {
   margin-top:30px;
   padding:15px;
-  background:#29aafe;
-  border-color:#29aafe;
+  background:#187106;
+  border-color:#187106;
 }
 .login-block .hr-xs
 {
@@ -185,3 +185,7 @@
 }
 
 
+.registration-bg {
+  background: url(../images/Home-slider-34jpg.jpg) no-repeat;
+  height: auto !important;
+}

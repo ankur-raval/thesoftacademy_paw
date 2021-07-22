@@ -12,6 +12,9 @@ def courses_view(request):
 def free_session_view(request):
     return render(request, 'courses_list/free_session.html')
 
+def free_session_reg_view(request):
+    return render(request, 'free_session_registration.html')
+
 def basic_course_view(request):
     return render(request, 'courses_list/basic_course.html')
 

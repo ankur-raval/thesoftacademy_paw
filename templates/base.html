@@ -57,7 +57,7 @@
                         </li>
                         <li><a href="{% url 'services' %}" style="text-decoration: none;">Services</a></li>
                         <li class="subnav">
-                            <a href="{% url 'courses' %}" style="text-decoration: none;" >Courses</a>
+                            <a href="" style="text-decoration: none;" onclick="return false">Courses</a>
                             <ul class="sub-menu">
                                 <li><a href="{% url 'courses' %}" style="text-decoration: none;"  class="nav-link smooth-scroll">All Courses</a></li>
                                 <li><a href="{% url 'free_session' %}" style="text-decoration: none;"  class="nav-link smooth-scroll">Free Session</a></li>
@@ -72,7 +72,7 @@
                         </li>
                     </ul>
                     <div class="header-cta">
-                        <a href="{% url 'registration' %}" class="btn btn-1c" style="color: #187106;">Join Now</a>
+                        <a href="{% url 'free_session_registartion' %}" class="btn btn-1c" style="color: #187106;">Free Session</a>
                     </div>
                 </div>
                 <!-- Menu Toogle end -->
@@ -148,7 +148,7 @@
                         </div>
                     </div>
                     <!-- footer widget -->
-                    <div class="col-xl-2 offset-xl-1 col-lg-2 col-sm-6">
+                    <div class="col-xl-2 offset-xl-1 col-lg-2 col-sm-6" style="margin-top: 50px;">
                         <!-- footer widget -->
                         <div class="f-widget-title">
                             <h4 style="color: white;">Recent Blog</h4>
@@ -164,7 +164,7 @@
                     </div>
                     
                     <!-- footer widget -->
-                    <div class="col-xl-3 col-lg-3 col-sm-6" style="margin-left: auto;">
+                    <div class="col-xl-3 col-lg-3 col-sm-6 footer_contact" style="margin-left: auto; margin-top: 50px;">
                         <!-- footer widget -->
                         <div class="f-widget-title">
                             <h4>Contact us</h4>
@@ -248,6 +248,7 @@
                 if ($(this).scrollTop() > 50) { 
                     $('.menu_bg').css('background-color','rgb(223, 238, 234, .95)')
                     $('.btn-1c').css('border','1px solid white')
+
                 }
                 if ($(this).scrollTop() < 50) { 
                     $('.menu_bg').css('background-color','white')

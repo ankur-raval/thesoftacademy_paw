@@ -16,12 +16,6 @@ urlpatterns = [
     path('services',views.services_view,name='services'),
 
 
-
-
-
-
-
-
     
 
 

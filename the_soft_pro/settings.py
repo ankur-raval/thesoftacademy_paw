@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-op7&ibn+7ioqsh0p*b8z8er74h%5#3uttv00b64^epa!b-l)7b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pages_app',
     'user_registration_app',
+    'administration_app',
 ]
 
 MIDDLEWARE = [
@@ -133,7 +134,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-
 
 
 # messages

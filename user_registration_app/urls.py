@@ -6,7 +6,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('registration',views.student_registration_view,name='registration'),
-    # path('login',views.login_view,name='login'),
+    path('free_session_registartion',views.free_session_reg_view,name='free_session_registartion'),
+    path('login',views.login_view,name='login'),
 
 
     
